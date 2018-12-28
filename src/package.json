@@ -1,0 +1,33 @@
+{
+  "name": "wallet",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./tsc/server.ts",        
+    "start": "nodemon --inspect -L ./bin/server.js",
+    "prod": "yarn run build && yarn run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "latest",
+    "ethereumjs-tx": "latest",
+    "express": "latest",
+    "moment": "^2.22.2",
+    "mongodb": "^3.1.8",
+    "mongoose": "^5.3.8",
+    "node-fetch": "^2.2.1",
+    "node-inspect": "^1.11.5",
+    "nodemon": "^1.18.5",
+    "truffle-hdwallet-provider": "latest",
+    "web3": "^1.0.0-beta.36",
+    "xhr2": "^0.1.4",
+    "typescript": "latest",
+    "@types/express": "latest",
+    "ts-node": "latest"
+  },
+  "devDependencies": {
+    "babel-preset-latest": "^6.24.1"
+  }
+}
